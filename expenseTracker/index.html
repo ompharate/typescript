@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- //navbar -->
+      <nav class="nav">
+        <ul class="nav-bar">
+          <li class="nav-item">TypeScriptExpenseTracker</li>
+        </ul>
+      </nav>
+
+      <!-- //balance -->
+      <div class="balance">
+        <p id="balance" class="balance-amount">0</p>
+      </div>
+
+      <!-- //form -->
+      <div class="form">
+        <input
+          type="text"
+          name="amount"
+          id="amount"
+          placeholder="Enter amount"
+        />
+        <input type="text" name="title" id="title" placeholder="Enter title" />
+        <div>
+          <button id="expense">Expense</button>
+          <button id="income">Income</button>
+        </div>
+      </div>
+
+      <!-- history-->
+
+      <div class="history"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
